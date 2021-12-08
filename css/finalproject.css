@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+body{
+
+   background: linear-gradient(-45deg, #22c1c3, #fdbb2d,#fdbb2d, #92be77);
+   background-size: 400% 400%;
+   display: grid;
+   border:1px;
+   grid-auto-columns: 2fr 2fr 1fr;
+   grid-auto-rows: 100px 2fr 100px;
+   grid-gap:10px;
+   grid-template-areas:
+   "header . nav"
+   ". main ."
+   "footer . ."
+
+}
+
+a:hover{
+  text-decoration-line: underline;
+  color: rgb(255, 246, 5) ;
+}
+
+a:link{
+  text-decoration-line: none;
+  color: rgb(122, 94, 9);
+}
+a:visited{
+  text-decoration-color: rgb(226, 64, 69);
+}
+
+a:active{
+  text-decoration-line: underline;
+}
+
+
+nav{
+  grid-area: nav;
+  font-size::25px;
+  font-family: 'Hind Vadodara', sans-serif;
+  
+}
+
+header{
+  grid-area: header;
+  font-size:35px;
+  font-family: 'Sacramento', cursive;
+
+}
+
+main {
+
+  grid-area: main;
+
+}
+
+footer {
+  grid-area: footer;
+
+}
+
+h4{
+  font-size: 30px;
+  font-family: 'Dancing Script';
+}

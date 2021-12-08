@@ -8,13 +8,9 @@ body{
    background-size: 400% 400%;
    display: grid;
    border:1px;
-   grid-auto-columns: 2fr 2fr 1fr;
-   grid-auto-rows: 100px 2fr 100px;
-   grid-gap:10px;
-   grid-template-areas:
-   "header . nav"
-   ". main ."
-   "footer . ."
+   grid-template-columns: repeat(4, 400px);
+   grid-template-rows: repeat(4, 400px);
+   grid-gap:2px;
 
 }
 
@@ -35,29 +31,40 @@ a:active{
   text-decoration-line: underline;
 }
 
+header{
+  grid-column: 1 / span2;
+  grid-row: 1;
+  font-size:35px;
+  font-family: 'Sacramento',"Arial", cursive;
+}
 
 nav{
-  grid-area: nav;
+  display: block;
+  grid-column: 4;
+  grid-row: 1;
   font-size::25px;
   font-family: 'Hind Vadodara', sans-serif;
-  
 }
 
-header{
-  grid-area: header;
-  font-size:35px;
-  font-family: 'Sacramento', cursive;
 
+#A{
+  grid-column: 2;
+  grid-row: 2;
 }
 
-main {
+#B{
+  grid-column: 2;
+  grid-row: 3;
+}
 
-  grid-area: main;
-
+#C{
+  grid-column: 2;
+  grid-row: 4;
 }
 
 footer {
-  grid-area: footer;
+  grid-column: 1/ span2;
+  grid-row: 5;
 
 }
 

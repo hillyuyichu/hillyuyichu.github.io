@@ -21,7 +21,7 @@ main{
   grid-row: 2/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 600px 300px 300px 300px;
+  grid-template-rows: 300px 600px 600px 600px;
   grid-gap:10px;
 }
 
@@ -86,7 +86,7 @@ nav ul{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row: 1;
-  max-width: 2fr;
+  max-width: 3fr;
   min-width: 1fr;
 }
 
@@ -106,14 +106,14 @@ nav ul{
 
 #D{
   grid-column:3;
-  grid-row:2;
-  max-width: 2fr;
+  grid-row:3;
+  max-width: 2.5fr;
   min-width: 1fr;
 }
 
 #E{
   grid-column:3;
-  grid-row:4;
+  grid-row:2;
   max width:2fr;
   min-width:1fr;
 
@@ -122,7 +122,7 @@ nav ul{
 footer {
   padding-left: 200px;
   grid-column: 2/ span2;
-  grid-row: 5;
+  grid-row: 6;
 
 }
 

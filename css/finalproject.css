@@ -21,7 +21,7 @@ main{
   grid-row: 2/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 600px 600px 600px;
+  grid-template-rows: 200px 600px 600px 600px;
   grid-gap:10px;
 }
 
@@ -114,10 +114,17 @@ nav ul{
 #E{
   grid-column:3;
   grid-row:2;
-  max width:2fr;
-  min-width:1fr;
-
+  max-width: 2.5fr;
+  min-width: 1fr;
 }
+
+#Z{
+  grid-column:2/span2;
+  grid-row:3;
+  max-width: 2.5fr;
+  min-width: 1fr;
+}
+
 
 footer {
   padding-left: 200px;

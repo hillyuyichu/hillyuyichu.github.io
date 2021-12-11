@@ -109,6 +109,13 @@ nav ul{
   grid-row:2;
   max-width: 2fr;
   min-width: 1fr;
+}
+
+#E{
+  grid-column:3;
+  grid-row:4;
+  max width:2fr;
+  min-width:1fr;
 
 }
 

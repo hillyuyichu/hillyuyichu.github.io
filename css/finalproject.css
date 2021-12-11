@@ -5,17 +5,20 @@
 body{
 
    background: linear-gradient(-45deg, #22c1c3, #fdbb2d,#fdbb2d, #92be77);
-   background-size: 400% 400%;
+   background-size: 300% 300%;
    display: grid;
-   border:1px;
-   grid-template-columns: repeat(4, 400px);
-   grid-template-rows: 300px, 400px, 400px, 400px;
+   border:3px;
+   grid-template-columns: 400px 400px 300px ;
+   grid-template-rows: 300px ,400px, 400px;
    grid-gap:2px;
+   overflow-x: hidden;
+
 
 }
 
 main{
   grid-column: 2/4;
+  grid-row: 2/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 600px 300px 300px 300px;
@@ -37,50 +40,81 @@ a:visited{
 
 a:active{
   text-decoration-line: underline;
+  background-color: #fdbb2d;
 }
 
 header{
-  grid-column: 1 / span2;
-  grid-row: 1;
+  display: flex;
+  margin-left: 30px;
+  text-align: right;
+  width: 800px;
+  length:800px;
+
+
+  /*grid-column: 1 / span2;
+  grid-row: 1;*/
   font-size:35px;
   font-family: 'Sacramento',"Arial", cursive;
 }
 
 nav{
-  list-style: none;
-  display: flex;
+  position fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  border-radius: 25px;
+
   grid-column: 4;
   grid-row: 1;
   font-size::25px;
   font-family: 'Hind Vadodara', sans-serif;
 }
 
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: space-around;
+  border-bottom: 2px solid #04AA6D;
+  border-radius: 25px;
+  padding-top: 60px;
+  padding-left: 0.1em;
+}
+
 
 #A {
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row: 1;
+  max-width: 2fr;
+  min-width: 1fr;
 }
 
 #B {
-  grid-column-start: 2;
-  grid-row-start:3
-  grid-row: 2;
+  grid-column:2;
+  grid-row:2;
+  max-width: 2fr;
+  min-width: 1fr;
 }
 
 #C {
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-row: 3;
+  grid-column:2;
+  grid-row:3;
+  max-width: 2fr;
+  min-width: 1fr;
 }
 
 #D{
-  grid column start:
+  grid-column:3;
+  grid-row:2;
+  max-width: 2fr;
+  min-width: 1fr;
 
 }
 
 footer {
-  grid-column: 1/ span2;
+  padding-left: 200px;
+  grid-column: 2/ span2;
   grid-row: 5;
 
 }

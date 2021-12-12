@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 body{
 
    background: linear-gradient(-45deg, #22c1c3, #fdbb2d,#fdbb2d, #92be77);
    background-size: 300% 300%;
    display: grid;
-   border:3px;
+
    grid-template-columns: 400px 400px 300px ;
-   grid-template-rows: 300px ,400px, 400px;
+   grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr;
    grid-gap:2px;
-   overflow-x: hidden;
-
-
 }
 
 main{
@@ -32,53 +30,64 @@ a:hover{
 
 a:link{
   text-decoration-line: none;
-  color: rgb(122, 94, 9);
+  color: #353333;
 }
 a:visited{
-  text-decoration-color: rgb(226, 64, 69);
+  text-decoration-color: #9C9C9C;
 }
 
 a:active{
   text-decoration-line: underline;
-  background-color: #fdbb2d;
+  background-color: #f8bb30;
 }
 
 header{
+  background-color:linear-gradient(-45deg, #22c1c3, #fdbb2d,#fdbb2d, #92be77);
   display: flex;
-  margin-left: 30px;
-  text-align: right;
-  width: 800px;
-  length:800px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height: 800px;
 
+}
 
-  /*grid-column: 1 / span2;
-  grid-row: 1;*/
-  font-size:35px;
-  font-family: 'Sacramento',"Arial", cursive;
+h1{
+
+   width:500px;
+   height: 80px;
+   font-size:45px;
+   font-family: 'Sacramento',"Arial", cursive;
+   text-shadow:5px 5px 25px black;
+   margin-left: 3px;
 }
 
 nav{
-  position fixed;
   top: 0;
   left: 0;
   width:100%;
-  border-radius: 25px;
+  /*grid-column: 4;
+  grid-row: 1;*/
 
-  grid-column: 4;
-  grid-row: 1;
-  font-size::25px;
-  font-family: 'Hind Vadodara', sans-serif;
 }
 
 nav ul{
+  background-color: #9ebe6f;
+  overflow: hidden;
   display: flex;
   list-style: none;
-  margin: 0;
   justify-content: space-around;
   border-bottom: 2px solid #04AA6D;
-  border-radius: 25px;
-  padding-top: 60px;
+  border-radius: 10px;
+  margin-top:30px;
+  margin-right: 10px;
+  padding-top: 10px;
   padding-left: 0.1em;
+  padding-bottom:10px;
+  font-size:20px;
+  font-color:rgb(0, 26, 51);
+  font-family: 'Raleway', 'aeril',sans-serif;
+  box-shadow: 0 0 10px 0 black;
 }
 
 
@@ -130,7 +139,6 @@ footer {
   padding-left: 200px;
   grid-column: 2/ span2;
   grid-row: 6;
-
 }
 
 h4{

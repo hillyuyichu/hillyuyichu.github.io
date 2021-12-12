@@ -31,7 +31,7 @@ a:hover{
 
 a:link{
   text-decoration-line: none;
-  color: #353333;
+  color: #280202;
 }
 a:visited{
   text-decoration-color: #9C9C9C;
@@ -142,7 +142,6 @@ nav ul{
   width:600px;
   font-size: 20px;
   padding-left:90px;
-
 
 }
 

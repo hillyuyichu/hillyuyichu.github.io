@@ -27,7 +27,7 @@ main{
 
 a:hover{
   text-decoration-line: underline;
-  color: rgb(255, 246, 5) ;
+  color: rgb(255, 246, 5);
 }
 
 a:link{
@@ -35,7 +35,7 @@ a:link{
   color: #280202;
 }
 a:visited{
-  color: #FF0000
+  color: #FF0000;
 }
 
 a:active{

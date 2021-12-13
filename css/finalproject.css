@@ -35,7 +35,7 @@ a:link{
   color: #280202;
 }
 a:visited{
-  text-decoration-color: #9C9C9C;
+  color: #FF0000
 }
 
 a:active{
@@ -86,7 +86,6 @@ nav ul{
   padding-left: 0.1em;
   padding-bottom:10px;
   font-size:20px;
-
   font-family: 'Libre Baskerville','Raleway','Ariel', serif;
   box-shadow: 0 0 10px 0 black;
 }
